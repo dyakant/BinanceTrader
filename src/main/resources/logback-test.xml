@@ -2,7 +2,6 @@
     <property name="LOG_HOME" value="./log/" />
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-<!--            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>-->
             <pattern>%-20(%d{yyyy-MM-dd HH:mm:ss} %highlight([%-5level])) %msg%n</pattern>
         </encoder>
     </appender>
@@ -11,12 +10,13 @@
         <file>${LOG_HOME}/log.txt</file>
         <append>true</append>
         <encoder>
-<!--            <pattern>%-4relative [%thread] %-5level %logger{35} - %msg%n</pattern>-->
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{0}: %msg%n</pattern>
         </encoder>
     </appender>
 
-    <root level="trace">
+    <logger name="ru.gitant" level="debug"/>
+
+    <root level="info">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="FILE"/>
     </root>

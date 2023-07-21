@@ -7,13 +7,12 @@ import org.apache.commons.io.IOUtils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
-import java.util.Objects;
 
 /**
  * Main configuration class to get necessary variables
  * and define other constants.
  * Also prints a starting logo
- *
+ * <p>
  * Created by Anton Dyakov on 22.07.2023
  */
 @Slf4j
@@ -35,8 +34,6 @@ public class Config {
         SECRET_KEY = dotenv.get("SECRET_KEY");
         TELEGRAM_API_TOKEN = dotenv.get("TELEGRAM_API_TOKEN");
         TELEGRAM_CHAT_ID = dotenv.get("TELEGRAM_CHAT_ID");
-        assert Objects.nonNull(API_KEY);
-        assert Objects.nonNull(SECRET_KEY);
     }
 
     private void printIntroLogo() {
