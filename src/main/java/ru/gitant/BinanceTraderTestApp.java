@@ -1,6 +1,7 @@
 package ru.gitant;
 
 import lombok.extern.slf4j.Slf4j;
+import ru.gitant.configuration.Config;
 
 /**
  * Hello world!
@@ -11,9 +12,6 @@ public class BinanceTraderTestApp
 {
     public static void main( String[] args )
     {
-        log.info("Start");
-        log.debug("Start");
-        log.error("Start");
-        System.out.println( "Hello World!" );
+        Config config = new Config();
     }
 }
