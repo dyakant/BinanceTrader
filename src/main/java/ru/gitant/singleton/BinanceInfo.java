@@ -43,8 +43,8 @@ public class BinanceInfo {
         return symbolInformation.get(symbol.toUpperCase());
     }
 
-    public static boolean isSymbolExists(String symbol) {
-        return symbolInformation.containsKey(symbol.toUpperCase());
+    public static boolean symbolDoesNotExist(String symbol) {
+        return !symbolInformation.containsKey(symbol.toUpperCase());
     }
 
     public static String formatQty(double buyingQty, String symbol) {
