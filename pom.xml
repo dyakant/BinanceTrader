@@ -14,6 +14,9 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <binance.java.sdk.version>1.2.4</binance.java.sdk.version>
+        <ta4j.core.version>0.16-SNAPSHOT</ta4j.core.version>
+        <!--        <ta4j.core.version>0.15</ta4j.core.version>-->
         <!--      <telegram.version>6.7.0</telegram.version>-->
     </properties>
 
@@ -21,12 +24,12 @@
         <dependency>
             <groupId>com.github.yonathan95</groupId>
             <artifactId>binance-java-sdk</artifactId>
-            <version>1.2.4</version>
+            <version>${binance.java.sdk.version}</version>
         </dependency>
         <dependency>
             <groupId>org.ta4j</groupId>
             <artifactId>ta4j-core</artifactId>
-            <version>0.15</version>
+            <version>${ta4j.core.version}</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>

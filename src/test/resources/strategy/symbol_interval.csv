@@ -1,7 +1,4 @@
 symbol,interval
-dashusdt,3m
-dashusdt,15m
-dashusdt,30m
 dashusdt,1m
 dashusdt,3m
 dashusdt,5m
@@ -17,3 +14,18 @@ dashusdt,1d
 dashusdt,3d
 dashusdt,1w
 dashusdt,1M
+solusdt,1m
+solusdt,3m
+solusdt,5m
+solusdt,15m
+solusdt,30m
+solusdt,1h
+solusdt,2h
+solusdt,4h
+solusdt,6h
+solusdt,8h
+solusdt,12h
+solusdt,1d
+solusdt,3d
+solusdt,1w
+solusdt,1M
